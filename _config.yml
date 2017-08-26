@@ -38,6 +38,7 @@ social: # jekyll-seo-tag > social overrides
     - https://github.com/igor-drozdov
     - https://www.linkedin.com/in/igor-drozdov-b58222102/
     - https://stackoverflow.com/users/2199600/igor-drozdov
+    - https://twitter.com/rogiwodzard
 
 # 4. Jekyll settings
 sass:
@@ -49,7 +50,7 @@ timezone: Europe/London # Timezone for blog posts and alike
 # 5. Collections
 collections:
   posts:
-    title: Posts # Needed for Siteleaf
+    title: "Igor Drozdov"
     output: true
     description: "My thoughts and ideas" # The post list page content
     feature_text:
