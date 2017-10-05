@@ -70,7 +70,7 @@ body {
   @include flexbox;
   @include align-items(center);
   img {
-    max-height: 4rem;
+    max-height: 25px;
   }
 }
 
@@ -408,6 +408,9 @@ pre code {
   text-shadow: none;
 }
 
+article.typeset {
+  text-align: center;
+}
 
 // Sassline overrides
 .typeset {

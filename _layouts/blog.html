@@ -16,7 +16,21 @@ layout: default
 				{{ collectiondata.description | markdownify }}
 
 			{% else %}
-				<h1>{{ page.title }}</h1>
+                                <h1>
+                                  <a href="https://github.com/igor-drozdov"
+                                    target="_blank">
+                                    <img src="assets/github.png" />
+                                  </a>
+                                  <a href="https://stackoverflow.com/users/2199600/igor-drozdov?tab=profile"
+                                    target="_blank">
+                                    <img src="assets/stackoverflow.png" />
+                                  </a>
+                                  <a href="https://twitter.com/rogiwodzard"
+                                    target="_blank">
+                                    <img src="assets/twitter.png" />
+                                  </a>
+                                </h1>
+				<h4>{{ page.title }}</h4>
 				{{ content }}
 				
 			{% endif %}
