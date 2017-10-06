@@ -78,7 +78,7 @@ encoding: utf-8 # Make sure the encoding is right
 title: "Igor Drozdov" # Site name or title, also used in jekyll-seo-tag
 logo: "/assets/logo.png" # Site logo, also used in jekyll-seo-tag
 description: "Igor Drozdov's personal blog" # Site description and default description, also used in jekyll-seo-tag
-url: "https://igor-drozdov.github.io" # Site url, also used in jekyll-seo-tag
+url: "http://ihar.me" # Site url, also used in jekyll-seo-tag
 baseurl: ""
 repo: "https://github.com/igor-drozdov/igor-drozdov.github.io"
 email: "ihar.drozdov@gmail.com"
