@@ -408,8 +408,12 @@ pre code {
   text-shadow: none;
 }
 
-article.typeset {
+div.personal-info {
   text-align: center;
+
+  img {
+    max-height: 32px;
+  }
 }
 
 // Sassline overrides

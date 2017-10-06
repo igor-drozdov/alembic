@@ -16,6 +16,7 @@ layout: default
 				{{ collectiondata.description | markdownify }}
 
 			{% else %}
+                            <div class="personal-info">
                                 <h1>
                                   <a href="https://github.com/igor-drozdov"
                                     target="_blank">
@@ -31,6 +32,7 @@ layout: default
                                   </a>
                                 </h1>
 				<h4>{{ page.title }}</h4>
+                              </div>
 				{{ content }}
 				
 			{% endif %}
