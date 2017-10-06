@@ -12,10 +12,11 @@ I, strange though it may sound, consider Elm as a smooth introduction to Haskell
 </p>
 
 <p>
-As an exercise, what about building one of the games of the amazing <a href="https://www.elevateapp.com">Elevate App</a>? The rules are simple: just provide as many as possible synonyms to the highlighted word in the sentence.
+As an exercise, what about building one of the games of the amazing <a href="https://www.elevateapp.com" target="_blank">Elevate App</a>? The rules are simple: just provide as many as possible synonyms to the highlighted word in the sentence.
 <br/>
 The source code is located <a
-href="https://github.com/igor-drozdov/eloquence-game/blob/master/src/Main.elm">
+href="https://github.com/igor-drozdov/eloquence-game/blob/master/src/Main.elm"
+target="_blank">
 here </a>. I'm just going to highlight basic moments in the article.
 </p>
 
@@ -37,7 +38,7 @@ Here’s how the complete app works:
 <h2> Initialize the app's backbone </h2>
 
 <p>
-  <a href="https://github.com/halfzebra/create-elm-app">Create Elm App</a> tool was used to initialize an application with no build configuration.
+  <a href="https://github.com/halfzebra/create-elm-app" target="_blank">Create Elm App</a> tool was used to initialize an application with no build configuration.
   Standard functions are generated (<code>init</code>, <code>update</code>, <code>view</code>, etc...) to be filled in the future.
 
 {% highlight haskell %}
@@ -197,7 +198,8 @@ view model =
 
 Since the function just renders a particular screen depending on the type of the model,
 I won't put the source code in the article. It still can be found <a
-href="https://github.com/igor-drozdov/eloquence-game/blob/master/src/Main.elm">
+href="https://github.com/igor-drozdov/eloquence-game/blob/master/src/Main.elm"
+target="_blank">
 here </a>.
 
 <hr />
