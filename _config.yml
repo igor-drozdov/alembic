@@ -92,9 +92,13 @@ navigation_footer:
 
 social_links: # Appears in sidebar. Set the urls then uncomment and comment out as desired
   RSS: /feed.xml
-  GitHub: https://github.com/igor-drozdov
-  LinkedIn: https://www.linkedin.com/in/igor-drozdov-b58222102/
-  StackOverflow: https://stackoverflow.com/users/2199600/igor-drozdov
+  github: https://github.com/igor-drozdov
+  linkedin: https://www.linkedin.com/in/igor-drozdov-b58222102/
+  stackoverflow: https://stackoverflow.com/users/2199600/igor-drozdov
+  gmail: mailto:ihar.drozdov@gmail.com
+  twitter: https://twitter.com/rogiwodzard
+
+google_analytics: "UA-107720992-1"
 
 sharing_links: # Appear at the bottom of single blog posts, uncomment and comment out as desired. Colours set the button colour
   Twitter: "#1DA1F2"
