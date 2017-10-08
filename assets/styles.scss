@@ -411,8 +411,12 @@ pre code {
 div.personal-info {
   text-align: center;
 
-  img {
-    max-height: 32px;
+  a {
+    display: inline-flex;
+
+    img {
+      max-height: 32px;
+    }
   }
 }
 
