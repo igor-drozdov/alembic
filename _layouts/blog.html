@@ -18,32 +18,31 @@ layout: default
 			{% else %}
                             <div class="personal-info">
                                 <h1>
+                                  <a href={{site.social_links.gmail}}
+                                    target="_blank">
+                                    <svg width=32 height=32> <use href="#gmail"/></svg>
+                                  </a>
                                   <a href={{site.social_links.github}}
                                     target="_blank">
-                                    <img src="assets/github.png" />
+                                    <svg width=32 height=32> <use href="#github"/></svg>
                                   </a>
                                   <a href={{site.social_links.stackoverflow}}
                                     target="_blank">
-                                    <img src="assets/stackoverflow.png" />
+                                    <svg width=32 height=32> <use href="#stackoverflow"/></svg>
                                   </a>
                                   <a href={{site.social_links.twitter}}
                                     target="_blank">
-                                    <img src="assets/twitter.png" />
+                                    <svg width=32 height=32> <use href="#twitter"/></svg>
                                   </a>
                                   <a href={{site.social_links.linkedin}}
                                     target="_blank">
-                                    <img src="assets/linkedin.png" />
+                                    <svg width=32 height=32> <use href="#linkedin"/></svg>
                                   </a>
 
-                                  <a href={{site.social_links.gmail}}
-                                    target="_blank">
-                                    <img src="assets/gmail.png" />
-                                  </a>
                                 </h1>
 				<h4>{{ page.title }}</h4>
                               </div>
 				{{ content }}
-				
 			{% endif %}
 
     </article>
