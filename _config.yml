@@ -82,7 +82,7 @@ url: "https://ihar.me" # Site url, also used in jekyll-seo-tag
 baseurl: ""
 repo: "https://github.com/igor-drozdov/igor-drozdov.github.io"
 email: "ihar.drozdov@gmail.com"
-disqus: "ihardrozdov" # Blog post comments, uncomment the option and set the site ID from your Disqus account
+disqus: "ihar-me" # Blog post comments, uncomment the option and set the site ID from your Disqus account
 avatarurl: "/assets/favicon.ico" # Uses avatars for favicons to get multple sites, eg Gravatar, Twitter, GitHub
 
 # 8. Site navigation
