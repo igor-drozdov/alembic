@@ -142,7 +142,7 @@ But the most tricky part is that some methods doesn't:
 There is optimized <a href="http://ruby-doc.org/core-2.5.0/Range.html#method-i-size" target="_blank">Range#size</a> as an alternative.
 </p>
 <p>
-<i> Range#count </i> is going to bubble up to <a href="https://ruby-doc.org/core-2.5.0/Enumerable.html#method-i-count" target="_blank">Enumerable#count</a> and instantiate an array from the range, the rest is history.
+<i> Range#count </i> is going to bubble up to <a href="https://ruby-doc.org/core-2.5.0/Enumerable.html#method-i-count" target="_blank">Enumerable#count</a> and iterate the whole range, the rest is history.
 But <b><nobr> count → int </nobr> </b> and <b><nobr> count(item) → int </nobr></b> callings could be optimized and <b><nobr> count { |obj| block } → int </nobr></b> case could fallback to <a href="https://ruby-doc.org/core-2.5.0/Enumerable.html#method-i-count" target="_blank">Enumerable#count</a>.
 <p>
 For instance, <a href="http://ruby-doc.org/core-2.5.0/Range.html#method-i-last" target="_blank">Range#last</a>
