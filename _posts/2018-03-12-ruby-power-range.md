@@ -68,7 +68,7 @@ But a few seconds later I added a couple more zeros to the number and realized t
 The first thought I had: <i> ah, cool, seems like <a href="http://ruby-doc.org/core-2.5.0/Range.html" target="_blank">Range</a> class has this optimized method defined</i>.
 However, turned out that it's just an <strong> if </strong> in the
 <a href="https://github.com/ruby/ruby/blob/a60a1c031e7fc1302db3cc8e415383231fa5870b/enum.c#L3895" target="_blank"> Enumberable#sum </a>
-<i> <nobr> yeah booooy</nobr></i> 😄.
+<i> <nobr> yeah booooy</nobr></i>
 
 <p>
 It doesn't matter as long as it does precisely what we expect it to do:
