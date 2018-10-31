@@ -12,9 +12,9 @@ The goal is to take advantage of a tree structure of an application since my bra
 </p>
 </blockquote>
 
-By the way <a href="https://www.elm-tutorial.org/en-v01/02-elm-arch/07-composing-2.html"> this guide </a> would perfectly solve this kind of a problem for the applications with models of <a href="https://en.wikipedia.org/wiki/Product_type"> product type </a> and it is actually cool how the app starts kind of consisting of smaller subwidgets, which are <a href="https://en.wikipedia.org/wiki/Closure_(mathematics)"> closed under a collection of operations</a>, i.e. a submodel has the same type after performing an operation from the collection.
+By the way <a href="https://www.elm-tutorial.org/en-v01/02-elm-arch/07-composing-2.html" target="_blank"> this guide </a> would perfectly solve this kind of a problem for the applications with models of <a href="https://en.wikipedia.org/wiki/Product_type" target="_blank"> product type </a> and it is actually cool how the app starts kind of consisting of smaller subwidgets, which are <a href="https://en.wikipedia.org/wiki/Closure_(mathematics)" target="_blank"> closed under a collection of operations</a>, i.e. a submodel has the same type after performing an operation from the collection.
 
-The model of my application is particularly of <a href="https://en.wikipedia.org/wiki/Tagged_union">sum types</a>, which comprises different states: `Start`, `Playing` and `GameOver` -- the concepts which potentially can be extracted into smaller subwidgets. The problem is that the application should be able to transit from one state to another, i.e. these subwidgets no longer have the closure under all the commands that trigger the update, since one of the commands should update a submodel to a different state.
+The model of my application is particularly of <a href="https://en.wikipedia.org/wiki/Tagged_union" target="_blank">sum types</a>, which comprises different states: `Start`, `Playing` and `GameOver` -- the concepts which potentially can be extracted into smaller subwidgets. The problem is that the application should be able to transit from one state to another, i.e. these subwidgets no longer have the closure under all the commands that trigger the update, since one of the commands should update a submodel to a different state.
 
 <blockquote>
 <p>
@@ -146,7 +146,9 @@ Let us notice that:
 
 <blockquote>
 <p>
-The idea is to create a `Transition` message for every state and process it on a higher level in order to transit the application to another state.
+The idea is to create a
+<code class="highlighter-rouge">Transition</code>
+message for every state and process it on a higher level in order to transit the application to another state.
 </p>
 </blockquote>
 
@@ -244,7 +246,7 @@ view model =
             Html.map GameOverMsg <| GameOverWidget.view state
 {% endhighlight %}
 
-Subscriptions are handled similarly (the whole can be viewed on <a href="https://github.com/igor-drozdov/eloquence-game/blob/master/src/Main.elm"> GitHub </a>)
+Subscriptions are handled similarly (the whole app can be viewed on <a href="https://github.com/igor-drozdov/eloquence-game/blob/master/src/Main.elm" target="_blank"> GitHub </a>)
 
 <hr />
 
