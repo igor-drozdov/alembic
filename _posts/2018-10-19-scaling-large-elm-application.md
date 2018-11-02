@@ -30,7 +30,7 @@ Let's start from creating three separate files for every state and moving the co
 The model structure changes from
 
 <em> Main.elm </em>
-{% highlight elm %}
+{% highlight haskell %}
 type Model
     = StartRound
     | PlayingRound PlayingRoundState
@@ -60,7 +60,7 @@ type alias GameOverState =
 To
 
 <em> Main.elm </em>
-{% highlight elm %}
+{% highlight haskell %}
 import Start as StartWidget
 import Playing as PlayingWidget
 import GameOver as GameOverWidget
@@ -72,7 +72,7 @@ type Model
 {% endhighlight %}
 
 <em> Playing.elm </em>
-{% highlight elm %}
+{% highlight haskell %}
 type alias Sentence =
     { prefix : String
     , word : String
@@ -90,7 +90,7 @@ type alias Model =
 {% endhighlight %}
 
 <em> GameOver.elm </em>
-{% highlight elm %}
+{% highlight haskell %}
 type alias Model =
     { score : Int
     , hint : Maybe String
@@ -103,7 +103,7 @@ type alias Model =
 Currently, the messages structure is
 
 <em> Main.elm </em>
-{% highlight elm %}
+{% highlight haskell %}
 type Msg
     = NoOp
     | StartGame
@@ -153,7 +153,7 @@ message for every state and process it on a higher level in order to transit the
 </blockquote>
 
 <em> Main.elm </em>
-{% highlight elm %}
+{% highlight haskell %}
 type Msg
     = StartMsg StartWidget.Msg
     | PlayingMsg PlayingWidget.Msg
@@ -162,13 +162,13 @@ type Msg
 {% endhighlight %}
 
 <em> Start.elm </em>
-{% highlight elm %}
+{% highlight haskell %}
 type Msg
     = Transition
 {% endhighlight %}
 
 <em> Playing.elm </em>
-{% highlight elm %}
+{% highlight haskell %}
 type Msg
     = SentenceMsg Sentence.Msg
     | Tick Time
@@ -177,7 +177,7 @@ type Msg
 {% endhighlight %}
 
 <em> GameOver.elm </em>
-{% highlight elm %}
+{% highlight haskell %}
 type Msg
   = Transition
   | Restart
@@ -188,7 +188,7 @@ type Msg
 As a result, we receive quite general `update` function, which either calls `update` functions of a subwidget depending on the message received or transmits the model into another type of state
 
 <em> Main.elm </em>
-{% highlight elm %}
+{% highlight haskell %}
 update : Msg -> Model -> ( Model, Cmd Msg )
 update msg model =
     case ( msg, model ) of
@@ -232,7 +232,7 @@ update msg model =
 The app renders view according to the current state and wraps the outgoing messages from subviews using `Html.map`
 
 <em> Main.elm </em>
-{% highlight elm %}
+{% highlight haskell %}
 view : Model -> Html Msg
 view model =
     case model of

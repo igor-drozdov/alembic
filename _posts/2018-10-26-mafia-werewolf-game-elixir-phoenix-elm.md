@@ -6,7 +6,7 @@ category: Elixir
 
 <a href="https://en.wikipedia.org/wiki/Mafia_(party_game)"> Mafia (a.k.a Werewolf)</a> is a party game modeling a <b>conflict</b> between two groups: an informed minority (<b>the mafia</b>), and an uninformed majority (<b>the innocents</b>), while I am trying to model a <b>harmony</b> between Backend (<b>Elixir</b>) and Frontend (<b>Elm</b>):
 
-{% highlight elm %}
+{% highlight haskell %}
 import Elm
 import Elixir
 
