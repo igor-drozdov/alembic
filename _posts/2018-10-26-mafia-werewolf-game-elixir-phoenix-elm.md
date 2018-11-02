@@ -25,9 +25,9 @@ The first working version is ready and recently upgraded to `Elm 0.19` and `Elix
 <h4> Synopsis </h4>
 Even though this is <b>a web application</b>, the <b>game is actually offline</b>. The main idea is to <b>replace the narrator</b> which asks a city to sleep/wake up, remembers the choices of the mafia, laughs at the ignorance of the players.
 
-A screen visible to everybody (for example a TV screen) plays the role of a narrator and displays which state of the game it is (Leader window). Each player connects to the game via a mobile device and therefore has a separate screen (Follower window) for viewing the personal data (which role in the game they were assigned, UI for nominating a particular user).
+A screen visible to everybody (for example a TV screen) plays the role of a narrator and displays which state of the game it is (Leader window). Players, being in the same room, connect to the game via a mobile device and therefore has a separate screen (Follower window) for viewing the personal data (which role in the game they were assigned, UI for nominating a particular user). Depending on the current state, `Leader window` either displays call-to-action on the screen and/or plays a voice message.
 
-The following video demonstrates the current game flow:
+The following video demonstrates the current game flow (but actually without audio):
 
 {% include video.html id="mtTelzvYjUg" %}
 
